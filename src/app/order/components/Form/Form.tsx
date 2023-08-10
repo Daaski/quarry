@@ -29,7 +29,7 @@ interface FormProps {
 export const Form = () => {
     const toast = useRef<Toast>(null)
     const onSubmit = (values: FormTypes) => {
-        console.log(values)
+
 
         toast.current?.show({severity: 'info', summary: 'Info', detail: 'Заявка успешно отправлена', life: 3000});
     }
@@ -57,7 +57,6 @@ export const Form = () => {
     })
 
 
-    console.log(errors.count)
 
     return (
         <div className={scss.form_layout}>
