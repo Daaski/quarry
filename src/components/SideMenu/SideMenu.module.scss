@@ -1,0 +1,20 @@
+.icon {
+  margin: 20px 0 0 20px;
+  cursor: pointer;
+}
+
+.link_item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.link_button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link_item_text {
+  font-size: 20px;
+}

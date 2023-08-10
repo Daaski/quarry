@@ -1,0 +1,79 @@
+@import "scss/utils";
+
+.form_layout {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+}
+
+.form {
+  display: flex;
+  grid-gap: 50px;
+  @include phoneOrTablet {
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+}
+
+.fields_wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @include phoneOrTablet {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.field {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  &:first-child {
+    margin-top: 0;
+  }
+  @include phoneOrTablet {
+    margin-bottom: 10px;
+  }
+}
+
+.field_area {
+  @extend .field;
+  height: 220px;
+  width: 100%;
+
+  @include phoneOrTablet {
+    width: 100%;
+  }
+}
+
+.field_textarea {
+  height: 180px;
+  resize: none;
+}
+
+.field_label {
+  margin-bottom: 10px;
+}
+
+.button_form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  @include phoneOrTablet {
+    width: 100%;
+  }
+}
+
+.error_label {
+  margin-top: 5px;
+  font-size: 14px;
+  color: red;
+}

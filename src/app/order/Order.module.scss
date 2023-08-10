@@ -1,0 +1,14 @@
+@import "scss/utils";
+
+.order_layout {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.order_title {
+  text-align: center;
+  @include phoneOrTablet {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
