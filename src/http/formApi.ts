@@ -3,6 +3,7 @@ import {$clientAuth} from "http/index";
 import {AxiosResponse} from "axios";
 
 
+/*
 export const getObjects: T.GetObjects = async () => {
     const res: AxiosResponse<T.Object[]> = await $clientAuth.get()
 
@@ -42,4 +43,4 @@ export const sendOrder: T.SendOrder = async ({object,
                                                  driver}) => {
     await $clientAuth.post()
 
-}
+}*/
