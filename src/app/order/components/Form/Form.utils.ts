@@ -25,7 +25,7 @@ export const FormValidate = (values: FormTypes) => {
 
 
     if (good?.count) {
-        if (values.count > good.count.toString()) {
+        if (+values.count > good.count) {
             errors.count = 'Оставшееся кол-во на складе: '+ good.count
         }
     }
