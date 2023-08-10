@@ -1,7 +1,9 @@
 import {Form} from "app/order/components/Form";
 
 import scss from './Order.module.scss'
+/*
 import {getCarNumbers, getCustomers, getDrivers, getGoods, getObjects} from "http/formApi";
+*/
 
 const OrderPage = async () => {
 /*    const drivers = await getDrivers()
