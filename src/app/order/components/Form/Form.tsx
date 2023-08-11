@@ -28,8 +28,8 @@ interface FormProps {
 
 export const Form = () => {
     const toast = useRef<Toast>(null)
-    const onSubmit = (values: FormTypes) => {
-
+    const onSubmit = (values: FormTypes, {resetForm}: {resetForm: () => void}) => {
+        resetForm()
 
         toast.current?.show({severity: 'info', summary: 'Info', detail: 'Заявка успешно отправлена', life: 3000});
     }
